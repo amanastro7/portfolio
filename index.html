@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO - AMAN SHARMA</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="/images/optimus.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT ME</a>
+        <a href="#skills" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">SKILLS</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PROJECTS</a>
+        <a href="#certs" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CERTS</a>
+        <a href="#badges" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">BADGES</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="/images/bumblebee.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/amanastro7" target="_blank">
+             <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/aman-sharma-558b94124" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="/images/AMAN_SHARMAs_Resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+
+      <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive" style="color:white;">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT INFO</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>ADDRESS : Mirik, Darjeeling, West Bengal, India</p>
+              <p>CONTACT NO. : +918944888006 / +917430028275</p>
+              <p>E-MAIL : aman.srma.a7@gmail.com</p>
+            </div>
+          </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right" color='161515'>
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+          <a href="#badges" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">BADGES</a>
+          <a href="#certs" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CERTS</a>
+          <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#skills" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">SKILLS</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT ME</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:large;">"You don't have to be EXTREME, you just have to be CONSISTENT."</p>
+            <h1>AMAN SHARMA (27)</h1>
+            <h2>FLUTTER DEVELOPER</h2>
+            <p></p>
+          </div>
+
+          <!--ABOUT ME-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT ME</h2>
+
+            <p class="w3-margin-top-2"> 
+              I am a Flutter Developer focused on building high-performance, visually appealing, and scalable mobile applications. I enjoy creating products that are not only functional but also smart, intuitive, and impactful.
+            </p>
+
+
+            <p>
+              Along with mobile development, I have a strong foundation in Data Science and Artificial Intelligence, backed by professional certifications from IBM. I have worked with machine learning concepts, data analysis, and predictive modeling, which helps me build smarter, data-driven applications.
+            </p>
+
+            <p>
+              My combined experience in Flutter, AI, and Data Science allows me to create intelligent mobile solutions — from AI-powered features to analytics-driven user experiences. I am always eager to learn new technologies, solve challenging problems, and build impactful digital products.
+            </p>
+
+            <p>
+              I’m always open to collaboration, innovative projects, and opportunities where I can contribute as a Flutter Developer while integrating AI-driven capabilities into modern applications.
+            </p>
+          </div>
+
+
+          <!--SKILLS-->
+          <div id="skills" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">SKILLS</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+            <!-- SKILLS SECTION
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3> -->
+
+              <!--TECHNICAL SKILLS-->
+              <h3>TECHNICAL SKILLS</h3>
+              <ul class="w3-ul" style="font-weight: 500;">
+                
+                <li>
+                  <b>Mobile App Development:</b> Flutter (Dart), Cross-platform Android & iOS development, Responsive UI design, REST API integration, Performance optimization
+                </li>
+
+                <li>
+                  <b>State Management & Architecture:</b> Provider, Scalable widget architecture, Modular navigation patterns, Clean UI component structuring
+                </li>
+
+                <li>
+                  <b>Firebase Ecosystem:</b> Firebase Auth (Google, Email, Anonymous), Cloud Firestore (real-time sync & offline persistence), Remote Config, User profile management
+                </li>
+
+                <li>
+                  <b>AI Integration:</b> Google Gemini API integration, AI-powered text generation, prompt-based content creation, AI assistant features (chat, advice, creative generation)
+                </li>
+
+                <li>
+                  <b>Monetization Systems:</b> RevenueCat (subscriptions, trials, premium tiers), Google Mobile Ads (Banner, Interstitial, Native, Rewarded Ads)
+                </li>
+
+                <li>
+                  <b>UI/UX & Design:</b> Material UI, Glassmorphism design, CustomClipper layouts, Gradient theming, GoogleFonts, Lottie animations, Shimmer loading effects
+                </li>
+
+                <li>
+                  <b>App Features & Integrations:</b> Real-time favorites system, Native sharing (share_plus), Clipboard integration, Image upload (image_picker), Local caching (SharedPreferences), Haptic feedback
+                </li>
+
+                <li>
+                  <b>Programming & Tools:</b> Dart, Python (Data Science basics), Git, GitHub, API handling, JSON parsing
+                </li>
+
+                <li>
+                  <b>Data Science & AI Foundations:</b> Machine Learning fundamentals, Data analysis, Predictive modeling concepts, AI-driven application features
+                </li>
+
+              </ul>
+
+
+              <!--SOFT SKILLS-->
+              <h3>SOFT SKILLS</h3>
+              <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Communication, Team Collaboration, Problem-Solving</li
+                  <li>Adaptability, Time Management, Critical Thinking</li>
+                  <li>Attention to Detail, Creativity, Work Ethic, Organization</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <!--PROJECTS-->
+          <div id="projects" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PROJECTS</h2>
+            <div class="w3-container w3-margin-top-2">
+
+              <!-- PROJECT 1 -->
+              <div class="w3-margin-bottom-4">
+                <h3 class="w3-border-amber">📱 AI Buzz – AI News App</h3>
+                <p><b>Tech Stack:</b> Flutter, Firebase, REST APIs</p>
+                <p>
+                  A mobile app that delivers daily AI news, tools, and explainers. 
+                  Includes real-time updates, bookmarking, and push notifications.
+                </p>
+                <a href="#" target="_blank" class="w3-button w3-amber w3-small w3-round">View Project</a>
+                <a href="#" target="_blank" class="w3-button w3-light-grey w3-small w3-round">Source Code</a>
+              </div>
+
+              <!-- PROJECT 2 -->
+              <div class="w3-margin-bottom-4">
+                <h3 class="w3-border-amber">🧠 Memory Capture AI App</h3>
+                <p><b>Tech Stack:</b> Flutter, Gemini AI, OCR</p>
+                <p>
+                  AI-powered screenshot memory app that extracts text, summarizes content,
+                  and stores searchable knowledge using vector storage.
+                </p>
+                <a href="#" target="_blank" class="w3-button w3-amber w3-small w3-round">View Project</a>
+                <a href="#" target="_blank" class="w3-button w3-light-grey w3-small w3-round">Source Code</a>
+              </div>
+
+              <!-- PROJECT 3 -->
+              <div class="w3-margin-bottom-4">
+                <h3 class="w3-border-amber">📊 Data Science Dashboard</h3>
+                <p><b>Tech Stack:</b> Python, Streamlit, Pandas, ML</p>
+                <p>
+                  Interactive dashboard for analyzing datasets, building predictive models,
+                  and visualizing insights for decision-making.
+                </p>
+                <a href="#" target="_blank" class="w3-button w3-amber w3-small w3-round">View Project</a>
+                <a href="#" target="_blank" class="w3-button w3-light-grey w3-small w3-round">Source Code</a>
+              </div>
+
+              <!-- PROJECT 4 -->
+              <div class="w3-margin-bottom-4">
+                <h3 class="w3-border-amber">🔐 Web Penetration Testing Lab</h3>
+                <p><b>Tech Stack:</b> Kali Linux, Burp Suite, OWASP, Python</p>
+                <p>
+                  Hands-on security testing environment covering vulnerability scanning,
+                  exploitation, and report generation based on real-world scenarios.
+                </p>
+                <a href="#" target="_blank" class="w3-button w3-amber w3-small w3-round">Case Study</a>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!--CERTIFICATES-->
+          <div id="certs" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CERTS</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!-- IBM DATA SCIENCE -->
+              <div class="w3-margin-top-2">
+                <h3 class="w3-border-amber" style="cursor:pointer" onclick="toggleCert('cert1')">
+                  ▶ IBM DATA SCIENCE PROFESSIONAL CERTIFICATE
+                </h3>
+                <div id="cert1" class="w3-hide">
+                  <h4>Instructors: IBM Skills Network</h4>
+                  <p>May 2023</p>
+                  <ul class="w3-ul" style="font-weight: 500;">
+                    <li>Networking Refresher, Introduction to Linux, and Introduction to Python</li>
+                    <li>Ethical Hacker Methodology & Reconnaissance</li>
+                    <li>Scanning, Enumeration & Vulnerability Scanning</li>
+                    <li>Web App Exploitation & Active Directory concepts</li>
+                    <li>Report writing for ethical hacking activities</li>
+                  </ul>
+                  <section style="display:flex; justify-content:center; align-items:center;" class="w3-margin-top-2">
+                    <div style="background:#fff; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:20px;">
+                      <img src="/images/ibm_ds.png" style="width:100%; border-radius:10px;">
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+              <!-- TENSORFLOW -->
+              <div class="w3-margin-top-3">
+                <h3 class="w3-border-amber" style="cursor:pointer" onclick="toggleCert('cert2')">
+                  ▶ TENSORFLOW DEVELOPER CERTIFICATE
+                </h3>
+                <div id="cert2" class="w3-hide">
+                  <h4>Instructors: Andrei Neagoie, Daniel Bourke</h4>
+                  <p>August 2022</p>
+                  <ul class="w3-ul" style="font-weight: 500;">
+                    <li>Web app security concepts & OWASP Top 10</li>
+                    <li>Structured penetration testing methodology</li>
+                    <li>Hands-on testing on Juice Shop</li>
+                    <li>Security report creation</li>
+                  </ul>
+                  <section style="display:flex; justify-content:center;" class="w3-margin-top-2">
+                    <div style="background:#fff; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:20px;">
+                      <img src="/images/tensorflow_cert.jpg" style="width:100%; border-radius:10px;">
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+              <!-- ML BOOTCAMP -->
+              <div class="w3-margin-top-3">
+                <h3 class="w3-border-amber" style="cursor:pointer" onclick="toggleCert('cert3')">
+                  ▶ COMPLETE MACHINE LEARNING & DATA SCIENCE BOOTCAMP
+                </h3>
+                <div id="cert3" class="w3-hide">
+                  <h4>Instructors: Andrei Neagoie, Daniel Bourke</h4>
+                  <p>August 2022</p>
+                  <ul class="w3-ul" style="font-weight: 500;">
+                    <li>API Reconnaissance & Endpoint Analysis</li>
+                    <li>OWASP API Top 10 vulnerabilities</li>
+                    <li>SSRF, Injection attacks, exploitation techniques</li>
+                  </ul>
+                  <section style="display:flex; justify-content:center;" class="w3-margin-top-2">
+                    <div style="background:#fff; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:20px;">
+                      <img src="/images/ds_bootcamp.jpg" style="width:100%; border-radius:10px;">
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--BADGES-->
+          <div id="badges" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">BADGES</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!-- IBM DATA SCIENCE BADGES -->
+              <div class="w3-margin-top-2">
+                <h3 class="w3-border-amber" style="cursor:pointer" onclick="toggleCert('badge1')">
+                  ▶ IBM DATA SCIENCE PROFESSIONAL CERTIFICATE BADGES
+                </h3>
+                <div id="badge1" class="w3-hide">
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="41af57fa-1ec9-4ae8-ab36-10c50e0e1039" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="192fa774-9f15-4e94-92ab-866a99ad1ad1" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="d5c46a76-5f1b-4bc3-8b4d-ad1307e37aab" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="5d285bff-a655-402a-99a3-cf00e8b725a3" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="ba2afd53-6f69-4c26-9c00-d6a85bb5d6d7" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="539d9de3-6956-4ead-bcd1-4248a7e719f7" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="50fa3cd9-7831-4456-9b06-c8f0047abfa7" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="c40ce659-858e-49f5-8534-22d75e3d0174" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="29f62f4e-90b3-4879-88ab-6303272b2df6" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="f451e254-e1d6-4630-b7d7-f723b6c9921a" data-share-badge-host="https://www.credly.com"></div>
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="9e3e3844-fbdb-40d0-bdc2-4d3bb2952673" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+              </div>
+
+              <!-- IBM AI ENGINEERING BADGES -->
+              <div class="w3-margin-top-3">
+                <h3 class="w3-border-amber" style="cursor:pointer" onclick="toggleCert('badge2')">
+                  ▶ IBM AI ENGINEERING PROFESSIONAL CERTIFICATE BADGES
+                </h3>
+                <div id="badge2" class="w3-hide">
+                  <div data-iframe-width="280" data-iframe-height="280" data-share-badge-id="24777841-588d-404b-89f5-8232f1b5641a" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2026 - AMAN SHARMA</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      
+      // Script to load feather icons
+      feather.replace()
+    </script>
+
+    <script>
+      function toggleCert(id) {
+        var x = document.getElementById(id);
+        if (x.classList.contains("w3-show")) {
+          x.classList.remove("w3-show");
+          x.classList.add("w3-hide");
+        } else {
+          x.classList.remove("w3-hide");
+          x.classList.add("w3-show");
+        }
+      }
+    </script>
+
+    <!-- Credly embed script (include ONCE) -->
+    <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+
+  </body>
+</html>
